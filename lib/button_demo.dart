@@ -16,34 +16,38 @@ class ButtonDemo extends StatelessWidget {
               padding: const EdgeInsets.only(top: 10, right: 25, left: 25),
               child: Column(
                 children: [
+                  //AppBar design here
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Icon(
                         Icons.menu,
                         size: 20,
                       ),
-                      SizedBox(
-                        width: 110,
-                      ),
-                      Stack(
-                        children: [
-                          Container(
-                            height: 25,
-                            width: 25,
-                            color: Color(0xffEA4545),
-                          ),
-                          SizedBox(
-                            width: 10,
-                          ),
-                          Text(
-                            "Discover",
-                            style:
-                                TextStyle(fontSize: 30, fontFamily: "Roboto"),
-                          ),
-                        ],
-                      ),
-                      SizedBox(
-                        width: 70,
+                      // SizedBox(
+                      //   width: 50,
+                      // ),
+                      Container(
+                        height: 50,
+                        width: 130,
+                        child: Stack(
+                          children: [
+                            Container(
+                              height: 25,
+                              width: 25,
+                              color: Color(0xffEA4545),
+                            ),
+                            Positioned(
+                              bottom: 8,
+                              left: 12,
+                              child: Text(
+                                "Discover",
+                                style: TextStyle(
+                                    fontSize: 30, fontFamily: "Roboto"),
+                              ),
+                            )
+                          ],
+                        ),
                       ),
                       Icon(
                         Icons.search,
