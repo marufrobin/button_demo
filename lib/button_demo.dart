@@ -94,10 +94,12 @@ class ButtonDemo extends StatelessWidget {
 
                 //discover more
                 Positioned(
-                  : 50,
+                  bottom: 0,
+                  left: 70,
+                  right: 70,
                   child: Container(
                     width: 200,
-                    height: 60,
+                    height: 50,
                     decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(20)),
@@ -106,7 +108,7 @@ class ButtonDemo extends StatelessWidget {
                       style: TextStyle(
                         // decoration: TextDecoration.lineThrough,
                         fontFamily: "Pacifico",
-                        fontSize: 18,
+                        fontSize: 25,
                         color: Colors.red,
                       ),
                       textAlign: TextAlign.center,
