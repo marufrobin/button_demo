@@ -1,3 +1,4 @@
+import 'package:button_demo/countryBar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -23,8 +24,8 @@ class ButtonDemo extends StatelessWidget {
               //--------------------------------
               // popular japan moscow london
               Container(
-                width: 376,
-                height: 44,
+                width: 380,
+                height: 45,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(30),
                   color: Color(0xff504949),
@@ -34,14 +35,7 @@ class ButtonDemo extends StatelessWidget {
                     SizedBox(
                       width: 18,
                     ),
-                    Text(
-                      "Popular",
-                      style: TextStyle(
-                        fontFamily: "Roboto",
-                        fontSize: 18,
-                        color: Colors.white,
-                      ),
-                    ),
+                    CountryBar(),
                     SizedBox(
                       width: 18,
                     ),
