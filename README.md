@@ -4,13 +4,9 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is about a travel discovering app where you can find details about a country or a place.
+# Project Picture and gif
 
-A few resources to get you started if this is your first Flutter project:
+![2022-10-08_20-57](https://user-images.githubusercontent.com/47666475/194713770-8ea25422-e044-4f25-92db-6aca05a1ca73.png)
+![discoveringApp](https://user-images.githubusercontent.com/47666475/194713692-59e215b1-72d5-4937-9ed2-85f77cf7ced3.gif)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
