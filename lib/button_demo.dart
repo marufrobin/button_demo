@@ -3,8 +3,25 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
-class ButtonDemo extends StatelessWidget {
+class ButtonDemo extends StatefulWidget {
   const ButtonDemo({super.key});
+
+  @override
+  State<ButtonDemo> createState() => _ButtonDemoState();
+}
+
+class _ButtonDemoState extends State<ButtonDemo> {
+  List countryName = [
+    ["Popular", true],
+    ["Japan", false],
+    ["Moscow", true],
+    ["London", false],
+  ];
+  callBackFunction(int index) {
+    setState(() {
+      countryName[index][1] = true;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -30,12 +47,22 @@ class ButtonDemo extends StatelessWidget {
                   borderRadius: BorderRadius.circular(30),
                   color: Color(0xff504949),
                 ),
-                child: Row(
+                child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: countryName.length,
+                  itemBuilder: (context, index) {
+                    
+                  },
                   children: [
                     SizedBox(
                       width: 18,
                     ),
-                    CountryBar(),
+                    CountryBar(
+                        isSlected: true,
+                        voidcallBack: (() {
+                          callBackFunction(1);
+                        }),
+                        menuName: CountryBar),
                     SizedBox(
                       width: 18,
                     ),
